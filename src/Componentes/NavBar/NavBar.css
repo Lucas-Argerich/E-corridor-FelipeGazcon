@@ -22,3 +22,10 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 .NavBar section ul{
     list-style: none;
 }
+
+.NavBar section ul li{
+    background-color: transparent;
+    border-radius:initial;
+    margin-top: 1%;
+    padding: 2px;
+}
