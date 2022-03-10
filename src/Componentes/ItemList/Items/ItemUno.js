@@ -11,6 +11,7 @@ function ItemUno(props) {
     <li className="ItemUno">
         <p>Nombre: {props.nombre} </p>
         <p>Descripcion: {props.descripcion} </p>
+        <p>Stock: {stock1}</p>
         <button onClick={() => {
           if(numeroActual + 1 > stock1){
             console.log("Imposible la compra item 2");
