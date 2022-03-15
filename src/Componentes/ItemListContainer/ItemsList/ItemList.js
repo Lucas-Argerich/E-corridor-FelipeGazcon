@@ -1,18 +1,11 @@
 import React from "react";
 import ItemUno from "./ItemUno";
 
-const ItemList = () => {
+const ItemList = (...props) => {
   return (
     <ul className="">
-        <li className="">
-          <ItemUno initial={0} stock={8} />
-        </li>
-        <li className="">
-          <ItemUno initial={0} stock={8} />
-        </li>
-        <li className="">
-          <ItemUno initial={0} stock={6} />
-        </li>
+      {props.listaEpica.map(
+        u => <li key={u.id}> <ItemUno nombre={u.nombre} picurl={u.picurl} initial={u.initial} stock={u.stock}/> </li>)}
     </ul>
   );
 };

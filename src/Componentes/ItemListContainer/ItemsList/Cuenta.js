@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Cuenta(props) {
   let { cuenta } = props;
+  let {stock} = props;
   return (
     <div>
       {cuenta >= 1 ? (
@@ -9,7 +10,6 @@ export default function Cuenta(props) {
       ) : (
         <p>Compraste {cuenta} Item</p>
       )}
-      {<p> {cuenta} en el carrito</p>}
     </div>
   );
 }

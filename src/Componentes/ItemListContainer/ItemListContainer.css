@@ -17,7 +17,7 @@ ul li{
     align-items: center;
     justify-content: space-evenly;
     width: 20%;
-    height: 28vh;
+    height: auto;
 }
 
 ul li div{
