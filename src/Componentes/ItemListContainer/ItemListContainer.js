@@ -17,7 +17,7 @@ function ItemListContainer(props) {
     {nombre : "Objeto a la venta 3", id : "2", picurl : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/3NumberThreeInCircle_whitebackground.png/220px-3NumberThreeInCircle_whitebackground.png", initial : "0", stock : "8"}
   ] 
 
-  return new Promise((resolve, reject) => {
+()=> { return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (listaEpica.length === 0) {
         reject("No hay productos");
@@ -26,6 +26,7 @@ function ItemListContainer(props) {
       }
     }, 2000);
   });
+     }
 }
 
 export default ItemListContainer;
